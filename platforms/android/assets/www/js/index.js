@@ -1,21 +1,4 @@
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing,
- * software distributed under the License is distributed on an
- * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
- * KIND, either express or implied.  See the License for the
- * specific language governing permissions and limitations
- * under the License.
- */
+
 var app = {
     // Application Constructor
     initialize: function() {
@@ -101,7 +84,7 @@ var app = {
         Materialize.toast("Bateria PÉSSIMA: " + status.level + "% recarregue o aparelho!", 2000);
 }
     },
-    //teste
+    
     receivedEvent2: function(id){
         function onSuccess(acceleration) {
             var marginLeft=acceleration.x*40 -10;
@@ -110,7 +93,7 @@ var app = {
             $('#yOut').text(acceleration.y);
             $('#zOut').text(acceleration.z);
             document.getElementById('acelerador').innerHTML = '<a style="margin-left: '+ marginLeft +
-                        'px; margin-top:'+marginTop+'px;" class="btnAcell btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">done</i></a>';
+                        'px; margin-top:'+marginTop+'px;" class="btnAcell btn-floating btn-large waves-effect waves-light blue"><img src="icons/ic_sentiment_very_satisfied_white_24dp/android/drawable-xhdpi/ic_sentiment_very_satisfied_white_24dp.png"/></a>';
             
             
             
@@ -121,11 +104,21 @@ var app = {
 function onError() {
     alert('onError!');
 }
-var options = { frequency: 50 };  // Update every 0.05 seconds
+var options = { frequency: 500 };  // Update every 0.5 seconds
 
 var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
     }
 };
+
+$("#btmenuacell").click(function(){
+    $('#ace').click();    
+});
+$("#btmenubat").click(function(){
+    $('#bat').click();    
+});
+$("#btmenusis").click(function(){
+    $('#sis').click();    
+});
     
 
 

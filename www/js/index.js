@@ -93,7 +93,7 @@ var app = {
             $('#yOut').text(acceleration.y);
             $('#zOut').text(acceleration.z);
             document.getElementById('acelerador').innerHTML = '<a style="margin-left: '+ marginLeft +
-                        'px; margin-top:'+marginTop+'px;" class="btnAcell btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">done</i></a>';
+                        'px; margin-top:'+marginTop+'px;" class="btnAcell btn-floating btn-large waves-effect waves-light blue"><img src="icons/ic_sentiment_very_satisfied_white_24dp/android/drawable-xhdpi/ic_sentiment_very_satisfied_white_24dp.png"/></a>';
             
             
             
@@ -109,6 +109,16 @@ var options = { frequency: 500 };  // Update every 0.5 seconds
 var watchID = navigator.accelerometer.watchAcceleration(onSuccess, onError, options);
     }
 };
+
+$("#btmenuacell").click(function(){
+    $('#ace').click();    
+});
+$("#btmenubat").click(function(){
+    $('#bat').click();    
+});
+$("#btmenusis").click(function(){
+    $('#sis').click();    
+});
     
 
 

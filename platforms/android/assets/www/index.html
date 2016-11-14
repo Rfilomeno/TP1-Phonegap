@@ -23,13 +23,13 @@
    </div>
     <ul class="tabs grey darken-3">
         <li class="tab">
-            <a href="#bateria" id="bat" class="vibra white-text waves-effect waves-light">Bateria</a>            
+            <a href="#bateria" id="bat" class="white-text waves-effect waves-light">Bateria</a>            
         </li>
         <li class="tab">
-            <a href="#sistema" class="vibra white-text waves-effect waves-light">Sistema</a>            
+            <a href="#sistema" id="sis" class="white-text waves-effect waves-light">Sistema</a>            
         </li>
         <li class="tab">
-            <a href="#tabAcel" class="vibra white-text waves-effect waves-light">Acelerador</a>            
+            <a href="#tabAcel" id="ace" class="white-text waves-effect waves-light">Acelerador</a>            
         </li>
     </ul>
     </div>
@@ -37,8 +37,8 @@
        <div class="app">
         <h2>Minha Bateria</h2>
         <div id="deviceready">
-            <p>A bateria está com <span id="carga"></span>% de carga.</p>
-        <p>Seu aparelho <span id="conectado"></span> conectado a uma fonte de energia.</p>
+            <p>A bateria está com <u><b><span id="carga"></span>%</b></u> de carga.</p>
+        <p>Seu aparelho <u><b><span id="conectado"></span></b></u> conectado a uma fonte de energia.</p>
         </div>
     </div>
     </div>
@@ -51,7 +51,7 @@
             <p>Fabricante: <span id="fabricante"></span></p>
             <p>Número Serial: <span id="serial"></span></p>
             <p>Tipo de conexão: <span id="conexao"></span></p>
-            <p>Versão do Cordova: <span id="conexao"></span></p>
+            <p>Versão do Cordova: <span id="cordova"></span></p>
             
         </div>
     </div>
@@ -66,6 +66,19 @@
         </div>
             
     </div>
+    <!-- teste-->
+    <div class="fixed-action-btn horizontal">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">menu</i>
+    </a>
+    <ul>
+      <li id="btmenuacell"><a class="btn-floating red"><i class="material-icons">games</i></a></li>
+      <li id="btmenusis"><a class="btn-floating yellow darken-1"><img src="icons/ic_perm_device_information_white_24dp/android/drawable-hdpi/ic_perm_device_information_white_24dp.png" ></img></a></li>
+      <li id="btmenubat"><a class="btn-floating green"><img src="icons/ic_battery_unknown_white_24dp/android/drawable-hdpi/ic_battery_unknown_white_24dp.png"</img></a></li>
+      <li id=""><a class="btn-floating blue vibra"><i class="material-icons">vibration</i></a></li>
+    </ul>
+  </div>
+   <!--fim-->
     <script src="js/jquery.min.js"></script>
     <script src="js/materialize.min.js"></script>
     <script type="text/javascript" src="cordova.js"></script>

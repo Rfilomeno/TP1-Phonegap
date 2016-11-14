@@ -1,0 +1,5 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/phonegap/tp1/platforms/android/assets/www/plugins/cordova-plugin-media-capture/www/MediaFileData.js"
+    ]
+}
